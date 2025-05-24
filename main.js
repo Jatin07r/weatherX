@@ -3,8 +3,6 @@ const apikey = '1a18cdb7c9914db3838105530250803';
 const search = document.querySelector("#search");
 const searchIcon = document.querySelector("#search-icon");
 const contents = document.querySelector(".contents");
-const menuIcon = document.querySelector('#menu-icon');
-const sidebarOverlay = document.querySelector('.sidebar-overlay');
 const suggestions = document.querySelector("#suggestions");
 const weatherInfo = document.querySelector("#weather-info");
 const location = document.querySelector("#location");
@@ -14,7 +12,7 @@ const aboutDayText = document.querySelector("#about-day-text");
 const forecastCards = document.querySelector(".forecast-cards");
 const sunriseTime = document.querySelector("#sunrise");
 const sunsetTime = document.querySelector("#sunset");
-const sungraph = document.querySelector("#sun-graph");
+const sunIcons = document.querySelector("#sun-icons");
 const windSpeed = document.querySelector("#wind-value");
 const pressure = document.querySelector("#pressure-value");
 const humidity = document.querySelector("#humidity-value");
@@ -27,7 +25,7 @@ setInterval(() => {
   hue = (hue + 1) % 360;
   const color = `hsl(${hue}, 50%, 25%)`;
   document.body.style.backgroundColor = color;
-}, 500); 
+}, 200); 
 
 search.addEventListener('input', async (e) => {
   const loc = search.value.trim();
@@ -117,9 +115,15 @@ function displayWeatherData(data) {
   if (data.current.is_day === 1) {
     sunriseTime.textContent = `Sunrise ${todayForecast.astro.sunrise}`;
     sunsetTime.textContent = `Sunset ${todayForecast.astro.sunset}`;
+    sunIcons.innerHTML = `
+    <img src="extra-icons/sunrise.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">
+    <img src="extra-icons/sunset.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">`;
   } else {
     sunriseTime.textContent = `Moonrise ${todayForecast.astro.moonrise}`;
     sunsetTime.textContent = `Moonset ${todayForecast.astro.moonset}`;
+    sunIcons.innerHTML = `
+    <img src="extra-icons/moonrise.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">
+    <img src="extra-icons/moonset.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">`;
   }
 
   humidity.textContent = `${data.current.humidity}%`;

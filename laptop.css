@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: black;
     transition: background-color 1s linear;
 }
 
@@ -20,20 +21,19 @@ body {
     margin: 0vh 1vh 0vh 0vh;
     padding: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
 #search{
     color: #ececec;
-    font-weight: bold;
-    border: 2px solid transparent;
     padding: 5px;
     padding-right: 45px;
     min-height: 5vh;
-    max-width: 60vh;
+    width: 80vh;
+    font-weight: bold;
     font-size: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s;
@@ -160,6 +160,15 @@ body {
     width: 100vh;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+#sun-icons{
+    height: 20vh;
+    width: 80vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .sun{

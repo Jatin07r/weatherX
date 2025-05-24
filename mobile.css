@@ -65,6 +65,11 @@
         justify-content: space-around;
     }    
     
+    #sun-icons{
+        height: 10vh;
+        width: 30vh;
+    }
+
     .extra {
         margin-top: 1vh;
         height: fit-content;

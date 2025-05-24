@@ -1,0 +1,20 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#f2ff38" width="187px" height="187px" viewBox="0 0 32.00 32.00" id="icon" xmlns="http://www.w3.org/2000/svg" stroke="#f2ff38" stroke-width="0.00032">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.44800000000000006"/>
+<g id="SVGRepo_iconCarrier">
+<defs>
+<style>.cls-1{fill:none;}</style>
+</defs>
+<title>sunrise</title>
+<rect x="2" y="27" width="27.9985" height="2"/>
+<path d="M16,20a4.0045,4.0045,0,0,1,4,4h2a6,6,0,0,0-12,0h2A4.0045,4.0045,0,0,1,16,20Z"/>
+<rect x="25" y="22" width="5" height="2"/>
+<rect x="21.6675" y="14.8536" width="4.958" height="1.9998" transform="translate(-4.1378 21.7175) rotate(-45)"/>
+<polygon points="16 4 11 9 12.41 10.41 15 7.83 15 8 15 15 17 15 17 8 17 7.83 19.59 10.41 21 9 16 4"/>
+<rect x="6.8536" y="13.3745" width="1.9998" height="4.958" transform="translate(-8.9099 10.1967) rotate(-45)"/>
+<rect x="2" y="22" width="5" height="2"/>
+<rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+</g>
+</svg>
