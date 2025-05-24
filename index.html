@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather App - Get real-time weather updates for any location worldwide">
+    <link rel="stylesheet" href="laptop.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>WeatherX App</title>
+</head>
+<body>
+<!-- Main Container -->
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="Enter city name">
+            <span class="material-symbols-outlined" id="search-icon">search</span>
+            <div id="suggestions"></div>
+        </div>
+        </div>
+        <div class="weather-info">
+            <div class="weather-info-left">
+                <div class="earth">
+                    <span class="material-symbols-outlined" id="location-icon">distance</span>
+                    <h2 id="location">Location</h2>
+                    <h1 id="temp">--°C</h1>
+                   <div class="about-day">
+                    <img id="about-day-icon" >
+                    <p id="about-day-text">About Day</p>
+                   </div>
+                </div>
+                <div class="forecast">
+                    <p id="forecast-text">3-Day Forecast</p>
+                    <div class="forecast-cards">
+                        <div class="forecast-card"></div>
+                        <div class="forecast-card"></div>
+                        <div class="forecast-card"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-info-right">
+                <div class="sun-time">
+                    <div class="sun">
+                        <p id="sunrise">Sunrise --:--</p>
+                        <p id="sunset">Sunset --:--</p>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="extra-text" id="wind-speed">
+                      <span>Wind</span>
+                      <img src="extra-icons/wind.svg" class="extra-icon">
+                      <span id="wind-value" class="value" >-- mPh</span>
+                    </div>
+                    <div class="extra-text" id="pressure">
+                      <span>Pressure</span>
+                      <img src="extra-icons/pressure.svg" class="extra-icon">
+                      <span id="pressure-value" class="value" >-- mbr</span>
+                    </div>
+                    <div class="extra-text" id="humidity">
+                        <span>Humidity</span> 
+                        <img src="extra-icons/humidity.svg" class="extra-icon">
+                        <span id="humidity-value" class="value" >-- %</span>
+                      </div>
+                      <div class="extra-text" id="uv">
+                        <span>UV</span>
+                        <img src="extra-icons/uv.svg" class="extra-icon">
+                        <span id="uv-value" class="value" >--</span>
+                      </div>
+                    <div class="extra-text" id="air">
+                        <span>Air-Quality</span>
+                        <img src="extra-icons/air.svg" class="extra-icon">
+                        <span id="air-value" class="value" >-- %</span>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

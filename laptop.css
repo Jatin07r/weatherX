@@ -1,0 +1,205 @@
+:root {
+    font-family: system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 'sans-serif';
+    line-height: 1.5;
+    font-weight: 400;
+    color: #ececec;
+}
+
+body {
+    transition: background-color 1s linear;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    margin: 0vh 1vh 0vh 0vh;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#search{
+    color: #ececec;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px;
+    padding-right: 45px;
+    min-height: 5vh;
+    max-width: 60vh;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+
+#search:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#search-icon{
+    position: absolute;
+    margin-left: -5vh;
+    margin-top: 1vh;
+    margin-right: 1vh;
+    background: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+#suggestions {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    max-width: 90%;
+    z-index: 1000;
+    cursor: default;
+}
+
+.weather-info{
+    margin: 0 2vh 0 2vh;
+    height: 85vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weather-info-left{
+    margin-top: 1vh;
+    height: 80vh;
+    width: 100vh;
+    position:relative;
+    padding: 3vh 0 0 0;
+}
+
+.earth{
+    margin-bottom: 4vh ;
+    padding: 10px;
+    min-height: 40vh;
+    width: 45vh;
+    text-wrap: nowrap;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+#location-icon{
+    margin-left: 1vh;
+    position: absolute;
+    background: none;
+    font-size: 5vh;
+}
+
+#location{
+    margin-left: 6vh;
+}
+
+#temp{
+    font-size: 18vh;
+}
+
+.about-day{
+    display: flex;
+    align-items: center;
+    height: 3vh;
+}
+
+#about-day-text{font-size: 3vh;}
+
+.forecast{
+    display: block;
+    padding: 5px;
+    width: 85vh;
+    min-height: 35vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#forecast-text{
+    text-align: center;
+    font-size: 3vh;
+}
+
+.forecast-cards{
+    margin: 1vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.forecast-card{
+    min-height: 22vh;
+    width: 25vh;
+    margin: 1vh;
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.weather-info-right{
+    margin-top: 1vh;
+    height: 80vh;
+    width: 100vh;
+    padding: 3vh 0 0 0;
+}
+
+.sun-time{
+    margin-bottom: 3vh;
+    padding: 5px;
+    height: 30vh;
+    width: 100vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sun{
+    margin: 1vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.extra{
+    height: 50vh;
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.extra-text{
+    padding: 5px;
+    margin: 10px;
+    height: 20vh;
+    width: 30vh;
+    border-radius: 20px;
+    font-size: 3vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.extra-icon{
+    display:block;
+    margin: 1vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+.value{
+    position: absolute;
+    font-size: 4.5vh;
+    margin-top: -10vh;
+    margin-left: -2vh;
+}
+
+#weatherapi{color: #ececec;}
