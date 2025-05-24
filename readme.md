@@ -9,7 +9,7 @@ Weather Forecast Web is a responsive web application that provides real-time wea
 - Search weather by city name
 - Current temperature and weather conditions
 - Humidity, wind speed, and other weather details
-- 5-day weather forecast
+- 3-day weather forecast
 - Responsive design for desktop and mobile
 - User-friendly interface
 
