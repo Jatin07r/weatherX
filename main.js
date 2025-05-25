@@ -89,8 +89,6 @@ async function fetchWeatherData(loc) {
     const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apikey}&q=${loc}&days=5&aqi=yes`);
     const result = await response.json(); 
 
-    console.log(result);
-
     if (result.error) {
       throw new Error(result.error.message);
     }
