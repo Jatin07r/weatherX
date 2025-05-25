@@ -68,6 +68,7 @@
     #sun-icons{
         height: 10vh;
         width: 30vh;
+        justify-content: space-between;
     }
 
     .extra {

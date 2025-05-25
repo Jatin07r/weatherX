@@ -116,14 +116,14 @@ function displayWeatherData(data) {
     sunriseTime.textContent = `Sunrise ${todayForecast.astro.sunrise}`;
     sunsetTime.textContent = `Sunset ${todayForecast.astro.sunset}`;
     sunIcons.innerHTML = `
-    <img src="extra-icons/sunrise.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">
-    <img src="extra-icons/sunset.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">`;
+    <img src="extra-icons/sunrise.svg">
+    <img src="extra-icons/sunset.svg">`;
   } else {
     sunriseTime.textContent = `Moonrise ${todayForecast.astro.moonrise}`;
     sunsetTime.textContent = `Moonset ${todayForecast.astro.moonset}`;
     sunIcons.innerHTML = `
-    <img src="extra-icons/moonrise.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">
-    <img src="extra-icons/moonset.svg"style="width: 20vh; height: 20vh; vertical-align: middle;">`;
+    <img src="extra-icons/moonrise.svg">
+    <img src="extra-icons/moonset.svg">`;
   }
 
   humidity.textContent = `${data.current.humidity}%`;
